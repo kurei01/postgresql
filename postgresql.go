@@ -22,14 +22,14 @@ var psqlConnectString = fmt.Sprintf("host=%s port=%d user=%s "+
 host, port, user, password, dbname)
 
 func InitDB() (*sql.DB, error) {
-	db, err := sql.Open("postgres", psqlConnectString)
-	if err != nil {
-		panic(err)
-	}
+    db, err := sql.Open("postgres", psqlConnectString)
+    if err != nil {
+        panic(err)
+    }
 
 	Ping(db)
 
-	fmt.Println("Connected to database")
+	fmt.Println("Connected to PostgreSQL")
 	return db, nil
 }
 
