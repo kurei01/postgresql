@@ -1,4 +1,4 @@
-module postgresql
+module github.com/kurei01/postgresql
 
 go 1.20
 
