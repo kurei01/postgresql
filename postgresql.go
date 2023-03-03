@@ -14,7 +14,7 @@ const (
 	port     = 5432
 	user     = "postgres"
 	password = "123"
-	dbname   = "interndemo"
+	dbname   = "internDemo"
 )
 
 var psqlConnectString = fmt.Sprintf("host=%s port=%d user=%s "+
